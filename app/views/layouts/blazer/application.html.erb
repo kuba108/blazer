@@ -4,6 +4,7 @@
     <title><%= blazer_title ? blazer_title : "Blazer" %></title>
 
     <meta charset="utf-8" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <%= favicon_link_tag "blazer/favicon.png" %>
     <% if defined?(Propshaft::Railtie) %>
       <%= stylesheet_link_tag "blazer/bootstrap-propshaft", "blazer/bootstrap", "blazer/selectize", "blazer/github", "blazer/daterangepicker", "blazer/application" %>
