@@ -57,6 +57,8 @@
 </div>
 
 <script>
+  const { createApp } = Vue;
+
   <%= blazer_js_var "dashboards", @dashboards %>
   <%= blazer_js_var "queries", @queries %>
   <%= blazer_js_var "more", @more %>
@@ -77,7 +79,7 @@
     return str.toLowerCase()
   }
 
-  var app = Vue.createApp({
+  var app = createApp({
     data: function() {
       return {
         searchTerm: "",
